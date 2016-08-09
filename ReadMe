@@ -1,0 +1,12 @@
+# Created by Tianyi Zeng 2012 for Artificial Intelligence
+# Project: Classification for numbers in images for text extracting from image sources, and face images for face recognition
+# Train the classifier on a set of handwritten digit images, then test it with another set of images. Same for human faces.
+# My algorithms in: answers.py, naiveBayes.py, perceptron.py
+# Algorithms used and compared: Naive Bayes, Perceptron
+# How to run
+python dataClassifier.py -c naiveBayes --autotune
+python dataClassifier.py -c naiveBayes –k 2
+python dataClassifier.py -c naiveBayes --autotune –d faces
+python dataClassifier.py -a -d digits -c naiveBayes -o -1 3 -2 6
+python dataClassifier.py -c perceptron
+python dataClassifier.py -c perceptron –w
